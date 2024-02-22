@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import { CiMobile1 } from "react-icons/ci";
@@ -78,9 +79,11 @@ export default function Home() {
               Empowering Brands with Custom Development and Strategic Marketing
             </h2>
 
-            <button data-aos='fade-up' data-aos-delay= '750' className="border border-white rounded w-36 h-14 hover:bg-[#f9004d] hover:border-none duration-700 text-lg font-[Poppins]">
-              Contact Us
-            </button>
+            <Link href="/contact">
+              <button data-aos='fade-up' data-aos-delay= '750' className="border border-white rounded w-36 h-14 hover:bg-[#f9004d] hover:border-none duration-700 text-lg font-[Poppins]">
+                Contact Us
+              </button>
+            </Link>
           </main>
 
           <section className="flex justify-center gap-11 mb-32">

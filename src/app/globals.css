@@ -1,45 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') ;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.cards-container:hover .react-icon{
+.cards-container:hover .react-icon {
   transition: all 0.3s ease;
   color: white;
 }
 
-.Contact-Cards:hover .react-icon{
+.Contact-Cards:hover .react-icon {
   transition: all 0.3s ease;
   color: white;
 }
 
-.cards-container{
-  @apply p-5 flex bg-white gap-9 w-[37rem] h-[12rem] rounded-md hover:-mt-2 shadow duration-500 hover:bg-gradient-to-br from-[#dc2626] via-[#ef4444] to-[#ae034d78] hover:text-white cursor-pointer
+.cards-container {
+  @apply p-5 flex bg-white gap-9 w-[37rem] h-[12rem] rounded-md hover:-mt-2 shadow duration-500 hover:bg-gradient-to-br from-[#dc2626] via-[#ef4444] to-[#ae034d78] hover:text-white cursor-pointer;
 }
 
-.Contact-Cards{
-  @apply p-5 flex bg-white gap-9 w-[24rem] h-[12rem] rounded-md hover:-mt-2 shadow duration-500 hover:bg-gradient-to-br from-[#dc2626] via-[#ef4444] to-[#ae034d78] hover:text-white cursor-pointer
+.Contact-Cards {
+  @apply p-5 flex bg-white gap-9 w-[24rem] h-[12rem] rounded-md hover:-mt-2 shadow duration-500 hover:bg-gradient-to-br from-[#dc2626] via-[#ef4444] to-[#ae034d78] hover:text-white cursor-pointer;
 }
 
-.number-style{
-  @apply text-[#E01C34] text-[3.4rem] font-bold text-center
+.number-style {
+  @apply text-[#E01C34] text-[3.4rem] font-bold text-center;
 }
 
-.person-info-card:hover .show-info{
+.person-info-card:hover .show-info {
   display: flex;
   transition: all 0.5s ease-in-out;
 }
 
-.footer-icons{
-  @apply w-12 h-12 p-2 border-[2px] border-[#717173] rounded-full text-[#717173] cursor-pointer hover:text-white hover:bg-pink-800 duration-700 hover:border-none hover:-mt-2
+.footer-icons {
+  @apply w-12 h-12 p-2 border-[2px] border-[#717173] rounded-full text-[#717173] cursor-pointer hover:text-white hover:bg-pink-800 duration-700 hover:border-none hover:-mt-2;
 }
 
-.contact-input{
-  @apply border border-[#bfbcbc92] px-5 h-14 outline-[#e16170b6] rounded
+.contact-input {
+  @apply border border-[#bfbcbc92] px-5 h-14 outline-[#e16170b6] rounded;
 }
 
-.brands{
-  @apply hover:scale-[1.08] duration-500 cursor-pointer
+.brands {
+  @apply hover:scale-[1.08] duration-500 cursor-pointer;
 }
