@@ -1,11 +1,12 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Person1 from "@/images/Person1.webp";
 import Person2 from "@/images/Person2.jpg";
 import Person3 from "@/images/Person3.jpg";
 import Person4 from "@/images/Person4.jpg";
 import Person5 from "@/images/Person5.jpg";
 import Person6 from "@/images/Person6.jpg";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Person {
   name: string;
@@ -49,7 +50,8 @@ function TeamSection() {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-center mb-32">
+    <Navbar  />
+      <section className="flex flex-col items-center justify-center mb-32 pt-32">
         <div className="text-center flex flex-col gap-5">
           <h1 className="text-lg text-bold text-[#E01C34]">Skilled Team</h1>
           <h2 className="text-3xl font-bold">
@@ -64,7 +66,7 @@ function TeamSection() {
 
         <div className="wrapper">
           {personInfo.map((person, index) => (
-            <div key={index} className="card rounded-xl overflow-hidden">
+            <div key={index} className="card rounded-lg overflow-hidden">
               <Image src={person.image} alt="" className="Image"/>
               <div className="info">
                 <h1>{person.name}</h1>
@@ -74,6 +76,7 @@ function TeamSection() {
           ))}
         </div>
       </section>
+      <Footer  />
     </>
   );
 }
