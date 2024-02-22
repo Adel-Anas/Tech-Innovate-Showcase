@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import TeamSection from "@/components/TeamSection";
 import Brand1 from '@/images/brand-01.png';
 import Brand2 from '@/images/brand-02.png';
@@ -153,7 +154,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col items-center justify-center gap-16 mb-20">
+          <section className="flex flex-col items-center justify-center gap-16 mb-10">
             <div className="flex flex-col text-center gap-5">
               <p className="text-[#E01C34]" data-aos="fade-up">OUR POPULAR SERVICES</p>
               <p className="text-4xl font-bold" data-aos="fade-up" data-aos-delay="250">
@@ -194,33 +195,11 @@ export default function Home() {
 
           <section className="flex flex-col items-center gap-5">
             <h1 className="text-[#E01C34]"  data-aos="fade-up">QUALITY IS OUR BEAUTY</h1>
-            <h2 className="text-4xl font-bold mb-8"  data-aos="fade-up" data-aos-delay="250">
+            <h2 className="text-4xl font-bold"  data-aos="fade-up" data-aos-delay="250">
               We Make Beautifull Things
             </h2>
 
-            <div className="flex items-center justify-center gap-2 mb-32"  data-aos="fade-in" data-aos-delay="500">
-              <div className="w-8/12">
-                <Image
-                  src={images[index]}
-                  alt="Projects"
-                  className="w-full h-full rounded-lg mb-6 duration-1000"
-                />
-                <div className="flex items-center justify-center gap-6">
-                  <div
-                    className={`w-[15px] h-[15px] border border-black rounded-full duration-1000 cursor-pointer ${index === 0 ? "bg-black" : " "}`}
-                    onClick={() => setIndex(0)}
-                  ></div>
-                  <div
-                    className={`w-[15px] h-[15px] border border-black rounded-full duration-1000 cursor-pointer ${index === 1 ? "bg-black" : " "}`}
-                    onClick={() => setIndex(1)}
-                  ></div>
-                  <div
-                    className={`w-[15px] h-[15px] border border-black rounded-full duration-1000 cursor-pointer ${index === 2 ? "bg-black" : " "}`}
-                    onClick={() => setIndex(2)}
-                  ></div>
-                </div>
-              </div>
-            </div>
+            <Projects />
           </section>
 
           <TeamSection  />
